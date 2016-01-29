@@ -1,0 +1,37 @@
+// main: ../index.less
+@tab-border-size: 1px;
+@tab-border: @tab-border-size solid @tab-border-color;
+
+/**
+ * Tabs
+ */
+QTabWidget:pane{
+  background-color: @tab-background-color-active;
+
+  border-left: @tab-border;
+  border-bottom: @tab-border;
+  border-right: @tab-border;
+}
+QTabBar::tab{
+  border-left: @tab-border;
+  border-bottom: @tab-border;
+  color: @tab-text-color;
+  padding: 1em;
+}
+QTabBar::tab:first{
+  border-left: none;
+}
+QTabBar::tab:selected{
+  background-color: @tab-background-color-active;
+  border-top-left-radius: @component-border-radius*1.75 @component-border-radius*1.75 0 0;
+  border-top-right-radius: @component-border-radius*1.75 @component-border-radius*1.75 0 0;
+  border-top: @tab-border;
+  border-left: 2px solid @base-accent-color;
+  border-right: @tab-border;
+  border-bottom: none;
+  color: @tab-text-color-active;
+}
+
+TabBar::tab{
+  padding: 1em -2px 1em 0;
+}

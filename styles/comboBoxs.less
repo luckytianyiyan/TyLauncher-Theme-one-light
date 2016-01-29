@@ -1,0 +1,21 @@
+// main: ../index.less
+/**
+ * ComboBoxs
+ */
+QComboBox{
+  min-height: 2em;
+  border-radius: @component-border-radius;
+  border: 1px solid @base-border-color;
+  background-color: @overlay-background-color;
+  color: @text-color;
+}
+QComboBox::drop-down{
+  background-color: transparent;
+}
+QComboBox:hover{
+  background-color: @background-color-highlight;
+}
+QComboBox QAbstractItemView{
+  color: @text-color-highlight;
+  background-color: @overlay-background-color;
+}

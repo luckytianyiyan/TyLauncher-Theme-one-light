@@ -1,0 +1,46 @@
+// main: ../index.less
+/**
+ * Windows
+ */
+QMainWindow, QDialog{
+  background-color: @app-background-color;
+  color: @text-color;
+}
+/**
+ * StatusBar
+ */
+QStatusBar{
+  background-color: transparent;
+}
+/**
+ * MenuBar
+ */
+QMenuBar{
+  background-color: transparent;
+}
+QMenuBar::item {
+  background-color: @background-color-highlight;
+  color: @text-color;
+}
+QMenuBar::item:selected {
+  background-color: @background-color-selected;
+  color: @text-color-selected;
+}
+QMenuBar::item:pressed {
+  background-color: @base-background-color;
+}
+
+QMenu, QMenu::item {
+  background-color: @base-background-color;
+  color: @text-color;
+}
+
+QMenu::item:selected {
+  background-color: @background-color-selected;
+  color: @text-color-selected;
+}
+QMenu::separator {
+  color: @base-border-color;
+  margin-left: 1em;
+  margin-right: 1em;
+}

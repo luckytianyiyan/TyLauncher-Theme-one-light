@@ -1,0 +1,26 @@
+// main: ../index.less
+@btn-border: 1px solid @button-border-color;
+/**
+ *  Buttons
+ */
+QPushButton{
+  background-color: @button-background-color;
+  border:@btn-border;
+  min-width: 4em;
+  padding: 0.5em 0.8em;
+  text-align: center;
+  border-radius: @component-border-radius;
+  color: @text-color;
+}
+QPushButton:hover{
+  background-color: @button-background-color-hover;
+  color: @text-color-highlight;
+}
+QPushButton:pressed{
+  background-color: darken(@button-background-color, 2%);
+}
+
+QPushButton#pushButtonIcon{
+  min-width: 100px;
+  min-height: 100px;
+}

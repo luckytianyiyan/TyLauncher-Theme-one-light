@@ -1,0 +1,16 @@
+// main: ../index.less
+/**
+ *  lineEidts
+ */
+QLineEdit{
+ color: @text-color-highlight;
+ border-radius: @component-border-radius;
+ min-height: @component-line-height + 2; // +2 for borders
+ selection-background-color: @input-selection-color;
+ background-color: @input-background-color;
+ border: 1px solid @input-border-color;
+}
+QLineEdit:focus {
+ border-color: @base-accent-color;
+ border-width: 2px;
+}
